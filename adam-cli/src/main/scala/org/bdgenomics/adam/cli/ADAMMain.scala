@@ -64,6 +64,7 @@ object ADAMMain extends Logging {
           PrintADAM,
           PrintGenes,
           FlagStat,
+          IdxStats,
           VizReads,
           PrintTags,
           ListDict,

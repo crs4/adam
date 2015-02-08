@@ -326,6 +326,11 @@ class AlignmentRecordRDDFunctions(rdd: RDD[AlignmentRecord])
     FlagStat(rdd)
   }
 
+  // FIXME
+  def adamIdxStats(): Array[(org.bdgenomics.formats.avro.Contig, Int)] = {
+    IdxStats(rdd)
+  }
+
   /**
    * Groups all reads by record group and read name
    * @return SingleReadBuckets with primary, secondary and unmapped reads
